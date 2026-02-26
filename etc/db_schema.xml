@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <table name="author">
+        <column name="id" type="int" auto_increment="true" primary_key="true"/>
+        <column name="name" type="varchar(255)"/>
+        <column name="email" type="varchar(255)" unique="true"/>
+        <column name="created_at" type="datetime"/>
+        <column name="updated_at" type="datetime"/>
+    </table>
+
+    <table name="product_author">
+        <column name="id" type="int" auto_increment="true" primary_key="true"/>
+        <column name="product_id" type="int"/>
+        <column name="author_id" type="int"/>
+        <column name="created_at" type="datetime"/>
+        <column name="updated_at" type="datetime"/>
+    </table>
+</database>
